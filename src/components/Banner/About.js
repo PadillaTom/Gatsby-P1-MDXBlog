@@ -6,8 +6,28 @@ import Title from './Title'
 import styled from 'styled-components'
 //...GatsbyImageSharpFixed
 
+const query = graphql`
+  {
+    person: file(relativePath: { eq: "banner-about.jpeg" }) {
+      childImageSharp {
+        fixed(width: 100, height: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
+
 const About = () => {
-  return <Wrapper>Banner About</Wrapper>
+  const data = useStaticQuery(query)
+  return (
+    <Wrapper>
+      <Title title="About me"></Title>
+      <Image fixed={data.person.childImageSharp.fixed} className="img"></Image>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <SocialLinks styleClass="banner-icons"></SocialLinks>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
