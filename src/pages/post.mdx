@@ -1,0 +1,53 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
+
+<section className="mdx-page">
+
+<h1> My Posts </h1>
+
+<div className="nice-text">
+
+<h3>Nice - Text</h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+Pour-over truffaut deep v, intelligentsia vexillologist seitan whatever taiyaki gastropub raclette occupy af wayfarers portland. Fam tacos asymmetrical mlkshk churc
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter></Counter>
+
+<LikeButton></LikeButton>
+
+```
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<Link to="/posts" className="btn center-btn">
+  All Posts
+</Link>
+
+</section>
