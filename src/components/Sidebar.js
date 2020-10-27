@@ -10,7 +10,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         <IoMdClose></IoMdClose>
       </button>
       <div className="sidebar-container">
-        <Links styleClass="sidebar-links"></Links>
+        <Links styleClass="sidebar-links">
+          <Categories></Categories>
+        </Links>
       </div>
     </aside>
   )
