@@ -10,7 +10,7 @@ readTime: 34
 
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
-import { Counter, LikeButton } from '../../components/Complete'
+import { Counter, LikeButton, RegVideo, Video } from '../../components/Complete'
 
 <h1> My Posts </h1>
 
@@ -53,6 +53,45 @@ const LikeButton = () => {
   )
 }
 ```
+
+<h2>
+
+video components
+
+</h2>
+
+<RegVideo></RegVideo>
+
+<Video></Video>
+
+<h2>Regular H2</h2>
+<h2 title="true"> Title H2 </h2>
+<h4>Inline Code</h4>
+
+´console.log("hello there")´
+
+<h4>Blockquote Element</h4>
+
+<blockquote display="default">
+  Pour-over truffaut deep v, intelligentsia vexillologist seitan whatever
+  taiyaki gastropub raclette occupy af wayfarers portland. Fam tacos
+  asymmetrical mlkshk churc
+</blockquote>
+<blockquote display="info">
+  Pour-over truffaut deep v, intelligentsia vexillologist seitan whatever
+  taiyaki gastropub raclette occupy af wayfarers portland. Fam tacos
+  asymmetrical mlkshk churc
+</blockquote>
+<blockquote display="warning">
+  Pour-over truffaut deep v, intelligentsia vexillologist seitan whatever
+  taiyaki gastropub raclette occupy af wayfarers portland. Fam tacos
+  asymmetrical mlkshk churc
+</blockquote>
+<blockquote>
+  Pour-over truffaut deep v, intelligentsia vexillologist seitan whatever
+  taiyaki gastropub raclette occupy af wayfarers portland. Fam tacos
+  asymmetrical mlkshk churc
+</blockquote>
 
 <Link to="/posts" className="btn center-btn">
   All Posts
