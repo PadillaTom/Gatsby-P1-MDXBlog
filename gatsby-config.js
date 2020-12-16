@@ -4,6 +4,7 @@ module.exports = {
     description: `Awesome Blog with Gatsby`,
     titleTemplate: `%s | MDX`,
     image: `mainImg.png`,
+    url: `https://recording-gatsby-mdx-blog,netlify.app`,
     twitterUsername: `@john:smilga`,
   },
   plugins: [
